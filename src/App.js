@@ -11,7 +11,6 @@ import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
 import MailIcon from '@mui/icons-material/Mail';
 
-import './App.css';
 import Wave from "react-wavify";
 import Navbar from './components/navbar';
 import Modal from "./Modal";
@@ -23,6 +22,8 @@ import wind from "./static/wind.mp3"
 import cloud from "./static/cloud.mp3"
 import waveSound from "./static/wave.mp3"
 import rain from "./static/rain.mp3"
+
+import './App.css';
 
 function App() {
   const [wave, setWave] = useState(false);

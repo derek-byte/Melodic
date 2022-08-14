@@ -84,12 +84,12 @@ function Navbar({cricketNoise, setCricketNoise, thunderNoise, setThunderNoise, w
             {sidebarIcons ? 
             <div>
                 <div>
-                    <Button className="musicButton" variant="contained" style={{backgroundColor: "rgba(30, 40, 97, 0.3)", margin: "2px", width: "100%"}} onClick={ () => {
+                    <Button className="timerButton" variant="contained" style={{backgroundColor: "rgba(30, 40, 97, 0.3)", margin: "2px", width: "100%"}} onClick={ () => {
                         setTimerActive(true)}
                     }>
                         START STUDY
                     </Button>
-                    <Button className="musicButton" variant="contained" style={{backgroundColor: "rgba(30, 40, 97, 0.3)", margin: "2px", width: "100%"}} onClick={ () => {
+                    <Button className="timerButton" variant="contained" style={{backgroundColor: "rgba(30, 40, 97, 0.3)", margin: "2px", width: "100%"}} onClick={ () => {
                         setTimerActive(false)}
                     }>
                         END STUDY
@@ -139,7 +139,7 @@ function Navbar({cricketNoise, setCricketNoise, thunderNoise, setThunderNoise, w
                     <form onSubmit={handleVideoSubmit}>
                         <TextField className="videoPlayer" onChange={handleVideoChange} id="filled-basic" label="Enter Video URL" variant="filled" style={{width: "100%"}}/>
                     </form>
-                    <ReactPlayer url={video} controls={true} height="38vh" width="400px"/>
+                    <ReactPlayer url={video} controls={true} height="250px" width="400px"/>
                 </div>
             </div> : null}
         </nav>
